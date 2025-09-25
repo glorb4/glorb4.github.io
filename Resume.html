@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Aaron Benhase - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
+    .container { max-width: 900px; margin: 0 auto; padding: 16px; background: #fff; }
+    header, main, footer, section { margin-bottom: 16px; }
+    h1, h2, h3 { margin: 0 0 10px; }
+    p { margin: 6px 0; }
+    .contact a { color: #2563eb; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    img.headshot { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 2px solid #ddd; }
+    ul { margin: 8px 0; padding-left: 20px; }
+    .two-col { display: block; }
+    .project { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    .project img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+    @media (min-width: 700px) {
+      .two-col { display: grid; grid-template-columns: 160px 1fr; gap: 16px; align-items: start; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+    
+      <h1>Aaron Benhase</h1>
+      <p class="contact">
+        Email: <a href="mailto:yourname@knights.ucf.edu">aa257544@ucf.edu</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank">https://www.linkedin.com/in/aaron-benhase-91591022b</a>
+      </p>
+    </header>
+
+    
+    <section class="two-col">
+      <div>
+        <img class="headshot" src="https://media.licdn.com/dms/image/v2/D4E03AQFna18rNIG_CQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1672020213207?e=1761782400&v=beta&t=Il-eS-xTg6rATbs5tOgUK1umDFuWFRqW_iytQ_pHIY0" alt="Professional headshot of Your Name">
+      </div>
+
+      <!-- Objective -->
+      <div>
+        <h2>Professional Objective</h2>
+        <p>Information Technology major at the University of Central Florida. I have a large interest and aptitude in the cybersecurity field and am looking for and open to internships!</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <h3>University of Central Florida</h3>
+      <p>B.S. in Information Technology, Aug 2022 to May 2026</p>
+      <ul>
+        <li>Relevant courses: Networking, Systems Administration, Secure Coding</li>
+        <li>GPA: 3.7</li>
+      </ul>
+    </section>
+
+   
+    <section id="experience">
+      <h2>Relevant Work Experience</h2>
+      <h3>IT Support Assistant, UCF Lab</h3>
+      <p>Jan 2024 to Present, Orlando, FL</p>
+      <ul>
+        <li>Set up and updated lab computers.</li>
+        <li>Helped students with Wi-Fi, printing, and login issues.</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Project One Title</h3>
+        <img src="../IMG_5095.jpg" alt="Screenshot or diagram for Project One">
+        <p>Short description of what you built and why it matters.</p>
+        <p><strong>Skills learned:</strong> HTML, CSS, JavaScript</p>
+        <p>
+          <a href="#" target="_blank">GitHub</a> |
+          <a href="#" target="_blank">Live Demo</a>
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Project Two Title</h3>
+        <img src="project2.jpg" alt="Screenshot or diagram for Project Two">
+        <p>Short description of what you built and why it matters.</p>
+        <p><strong>Skills learned:</strong> Node.js, Express, REST APIs</p>
+        <p>
+          <a href="#" target="_blank">GitHub</a> |
+          <a href="#" target="_blank">Live Demo</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: Python, JavaScript, Bash</li>
+        <li>Web: HTML, CSS, basic React</li>
+        <li>Tools: Git, VS Code, Wireshark</li>
+      </ul>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+      <h2>Awards and Honors</h2>
+      <ul>
+        <li>Dean’s List, 2024</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Your Full Name</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
