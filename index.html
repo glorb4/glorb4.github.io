@@ -2,141 +2,169 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Aaron Benhase - Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  
-  <div class="container">
-    <header>
-      <h1>Aaron Benhase</h1>
-      <p class="contact"> Email: <a href="aa257544@ucf.edu">aa257544@ucf.edu</a>
-        <br> LinkedIn: <a href="https://www.linkedin.com/in/aaron-benhase-91591022b" target="_blank">https://www.linkedin.com</a>
-      </p>
-    </header>
-    <section class="two-col">
-      <div>
-        <img class="headshot" src="https://media.licdn.com/dms/image/v2/D4E03AQFna18rNIG_CQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1672020213207?e=1761782400&v=beta&t=Il-eS-xTg6rATbs5tOgUK1umDFuWFRqW_iytQ_pHIY0" alt="Professional headshot of Your Name">
+<head>
+  <meta charset="utf-8">
+  <title>Aaron Benhase - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="container">
+    <h1>Aaron Benhase</h1>
+    <address class="contact">
+      Email: <a href="mailto:aa257544@ucf.edu">aa257544@ucf.edu</a><br>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/aaron-benhase-91591022b" target="_blank" rel="noopener">
+        linkedin.com/in/aaron-benhase-91591022b
+      </a>
+    </address>
+  </header>
+
+  <main class="container">
+
+    <!-- Intro -->
+    <section aria-labelledby="objective-heading">
+      <div class="two-col">
+        <figure>
+          <img class="headshot" src="https://media.licdn.com/dms/image/v2/D4E03AQFna18rNIG_CQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1672020213207?e=1761782400&v=beta&t=Il-eS-xTg6rATbs5tOgUK1umDFuWFRqW_iytQ_pHIY0" alt="Headshot of Aaron Benhase">
+        </figure>
+
+        <div>
+          <h2 id="objective-heading">Professional Objective</h2>
+          <p>Information Technology major at the University of Central Florida. Focused on cybersecurity. Open to internships.</p>
+        </div>
       </div>
-      
-      <!-- Objective -->
-      <div>
-        <h2>Professional Objective</h2>
-        <p>Information Technology major at the University of Central Florida. I have a large interest and aptitude in the cybersecurity field and am looking for and open to internships!</p>
-      </div>
     </section>
-    
+
     <!-- Education -->
-    <section id="education">
-      <h2>Education</h2>
-      <h3>University of Central Florida | Jun 2023 to May 2026</h3>
-      <p>B.S. College of Computer Engineering and Science - Information Technology</p>
-      <ul>
-        <li>Relevant courses: Networking, Systems Administration, Computer Science Courses, Computer Archetechture, Intro to Programming with C, Fundamentals of Information Technology, Database Concepts, OS Engineering, Computer Security</li>
-        <li>GPA: 3.45</li>
-      </ul>
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+
+      <article>
+        <h3>University of Central Florida</h3>
+        <p><time datetime="2023-06">Jun 2023</time> to <time datetime="2026-05">May 2026</time></p>
+        <p>B.S., College of Engineering and Computer Science, Information Technology</p>
+        <ul>
+          <li>Courses: Networking, Systems Administration, Computer Architecture, C Programming, Database Concepts, OS Engineering, Computer Security</li>
+          <li>GPA: 3.45</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Eastern Florida State College</h3>
+        <p><time datetime="2021-05">May 2021</time> to <time datetime="2023-05">May 2023</time></p>
+        <p>Associate Degree, Computer Science</p>
+        <ul>
+          <li>GPA: 3.6</li>
+        </ul>
+      </article>
     </section>
-    
-    <!-- Education -->
-    <section id="education">
-      <h2>Education</h2>
-      <h3>Eastern Florida State College | May 2021 - May 2023</h3>
-      <p>Associate Degree - Computer Science, Jun 2023 to May 2026</p>
-      <ul>
-        <li>Relevant courses: Networking, Systems Administration, Computer Science Courses, Computer Archetechture, Intro to Programming with C, Fundamentals of Information Technology, Database Concepts, OS Engineering, Computer Security</li>
-        <li>GPA: 3.6</li>
-      </ul>
+
+    <!-- Experience -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+
+      <article>
+        <h3>Cybersecurity Research, Cisco Systems</h3>
+        <p><time datetime="2025-05">May 2025</time> to <time datetime="2025-08">Aug 2025</time>, Raleigh, NC</p>
+        <ul>
+          <li>Supported cybersecurity and IT projects</li>
+          <li>Analyzed network traffic and reviewed X.509 chains</li>
+          <li>Helped with testing, docs, and research</li>
+          <li>Used enterprise tools and workflows</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Cashier, Publix Supermarkets</h3>
+        <p><time datetime="2024-01">Jan 2024</time> to present, Orlando, FL</p>
+        <ul>
+          <li>Handled transactions accurately</li>
+          <li>Helped customers with purchases</li>
+          <li>Troubleshot register and payment issues</li>
+        </ul>
+      </article>
     </section>
-    <section id="experience">
-      <h2>Relevant Work Experience</h2>
-      <h3>Cyvbersecurity Research, Cisco Systems</h3>
-      <p>May 2025 to Aug 2025, Raleigh, NC</p>
-      <ul>
-        <li>Supported cybersecurity and IT projects within Cisco’s enterprise environment</li>
-        <li>Analyzed network traffic and reviewed security certificates to strengthen secure communication</li>
-        <li>Assisted with testing, documentation, and research on system security practices</li>
-        <li>Gained hands-on experience with enterprise-level tools and workflows</li>
-      </ul>
-    </section>
-    <section id="experience2">
-      <h3>Cashier, Publix Supermarkets</h3>
-      <p>Jan 2024 to Present, Orlando, FL</p>
-      <ul>
-        <li>Operated cash register and handled customer transactions accurately</li>
-        <li>Provided friendly service and assisted customers with questions and purchases</li>
-        <li>Troubleshot register and payment system issues to keep checkout running smoothly</li>
-      </ul>
-    </section>
-    
+
     <!-- Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <article class="project">
         <h3>M.A.N.T.I.S</h3>
-        <p>I built a portable Linux cyber-lab on a System76 Meerkat, nicknamed <b>M.A.N.T.I.S (Mobile Analysis and Network Traffic Intelligence System)</b>. Focus on Android traffic using Malcolm for logs and Burp Suite for MITM testing. Reviewed X.509 chains and used JA4 for fingerprinting. </p>
-        <p>
-          <strong>Skills learned:</strong> Threat analysis, Malcolm stack, JA4, TLS
-        </p>
-        <!-- From Uiverse.io by cssbuttons-io -->
-         <!-- Had Some Trouble Getting These Buttons to Work But I Prevailed! -->
-        <a href="Project1.html" class="btn">
-          <span>View Project</span>
-        </a>
-      </div>
-      <div class="project">
-        <h3>AWS Bucket Mount / GuardDuty</h3>
-        <p>Mounted an S3 bucket to a Linux EC2 instance with s3fs for easy uploads and file access. Enabled GuardDuty malware protection to watch the bucket for threats.</p>
-        <p>
-          <strong>Skills learned:</strong> Linux, AWS S3, s3fs, GuardDuty
-        </p>
-        <a href="Project2.html" class="btn">
-          <span>View Project</span>
-        </a>
-      </div>
-      <div class="project">
+        <p>Portable Linux cyber lab on a System76 Meerkat. Android traffic focus with Malcolm for logs and Burp Suite for MITM testing. Reviewed X.509 chains and used JA4 for fingerprinting.</p>
+        <p><strong>Skills:</strong> Threat analysis, Malcolm, JA4, TLS</p>
+        <p><a href="Project1.html" class="btn"><span>View Project</span></a></p>
+      </article>
+
+      <article class="project">
+        <h3>AWS Bucket Mount and GuardDuty</h3>
+        <p>Mounted an S3 bucket to a Linux EC2 instance with s3fs for file access. Enabled GuardDuty malware detection for the bucket.</p>
+        <p><strong>Skills:</strong> Linux, AWS S3, s3fs, GuardDuty</p>
+        <p><a href="Project2.html" class="btn"><span>View Project</span></a></p>
+      </article>
+
+      <article class="project">
         <h3>ADS-B Flight Receiver</h3>
-        <p>Configured a Raspberry Pi with PiAware to track flights using ADS-B. Used 1090 MHz and 978 MHz receivers to collect and store data for real-time tracking.</p>
-        <p>
-          <strong>Skills learned:</strong> Raspberry Pi, Linux, Radio basics, Data logging
-        </p>
-      </div>
+        <p>Raspberry Pi with PiAware to track flights on 1090 MHz and 978 MHz. Collected and stored real-time flight data.</p>
+        <p><strong>Skills:</strong> Raspberry Pi, Linux, radio basics, data logging</p>
+      </article>
     </section>
 
-    <!--Skills-->
-        <!-- Key Skills -->
-    <section id="skills">
-      <h2>Key Skills</h2>
-      <ul>
-        <li>Bash, Linux</li>
-        <li>Malware Analysis, Traffic Analysis, X.509 Certificate Analysis, JA4 Fingerprinting</li>
-        <li>Meraki, Cisco Products, Malcolm Stack, Burp Suite, Maltego</li>
-        <li>Python, HTML/CSS, JavaScript, C/C++, Microsoft Access, Visual Studio, PyCharm IDE</li>
-        <li>MySQL Workbench 8.0.35, MySQL Server 8.0.35</li>
-        <h3>Amazon Web Services: </h3>
-        <li> EC2, GuardDuty, S3, TransferFamily, CloudWatch, SNS, Detective</li>
-        <h3>Basic Networking:</h3> 
-        <li>router and firewall operation</li>
-        <h3>Raspberry Pi advanced skills:</h3>
-        <li> ADS-B Receiver build and operation</li>
-        <h3>Security Tools:</h3> 
-        <li>Linux Operations, Lock Picking Skills, Malcolm Stack, Netcap </li>
-        <li> JA4 Fingerprinting X.509 Certificate Analysis, Flipper Zero, Fern Wifi Cracker, NMAP, WireShark, John the Ripper</li>
+    <!-- Key Skills -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Key Skills</h2>
 
-      </ul>
+      <article>
+        <h3>Programming</h3>
+        <ul>
+          <li>Python, C/C++, JavaScript, HTML/CSS</li>
+          <li>PyCharm, Visual Studio, Microsoft Access</li>
+          <li>MySQL Workbench 8.0.35, MySQL Server 8.0.35</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Cloud</h3>
+        <ul>
+          <li>AWS: EC2, S3, GuardDuty, Transfer Family, CloudWatch, SNS, Detective</li>
+          <li>Instance operations and microVMs</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Security and Networking</h3>
+        <ul>
+          <li>Malware analysis, traffic analysis, X.509 cert analysis, JA4 fingerprinting</li>
+          <li>Malcolm, Netcap, Burp Suite, Maltego</li>
+          <li>Kali Linux, Nmap, Wireshark, John the Ripper, Fern Wifi Cracker</li>
+          <li>Meraki, Cisco products, router and firewall operation</li>
+          <li>Lock picking, Flipper Zero</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Hardware</h3>
+        <ul>
+          <li>Raspberry Pi, ADS-B receiver builds</li>
+        </ul>
+      </article>
     </section>
-    
+
     <!-- Awards -->
-    <section id="awards">
-      <h2>Awards and Honors</h2>
+    <section id="awards" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Awards and Honors</h2>
       <ul>
         <li>Dean’s List | 2021-2023, 2025</li>
       </ul>
     </section>
-    <footer>
-      <p>&copy; Aaron Benhase</p>
-    </footer>
-  </div>
-  </body>
+
+  </main>
+
+  <footer class="container">
+    <p>&copy; Aaron Benhase</p>
+  </footer>
+
+</body>
 </html>
