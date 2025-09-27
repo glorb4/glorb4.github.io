@@ -6,6 +6,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <style>
+  
+a.btn { 
+
+/*Imported button from UIVerse wanted to add some nice looking CSS but want sure how to go about it */
+
+  position: relative;         
+  background: #fff;
+  border: none;
+  padding: 10px 10px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: black;
+  text-decoration: none;      
+  overflow: hidden;           
+}
+
+a.btn span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+a.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+a.btn:hover {
+  color: #fff;
+}
+
+a.btn:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+  /* Realized spacing was bad so added some better styling and spacing*/
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.5; 
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto; 
+  padding: 24px;     
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+  border-radius: 6px; 
+}
+
+header, main, footer, section {
+  margin-bottom: 28px; 
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ddd; 
+  padding-bottom: 4px;
+}
+
+h3 {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+p, li {
+  margin: 4px 0 8px 0;
+}
+
+ul {
+  margin: 6px 0 12px 18px;
+}
+
+.contact {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+.two-col {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.project {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+footer {
+  text-align: center;
+  padding-top: 12px;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+/* Project spacing and styling */
+  
     body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
     .container { max-width: 900px; margin: 0 auto; padding: 16px; background: #fff; }
     header, main, footer, section { margin-bottom: 16px; }
@@ -20,7 +144,7 @@
       .two-col { display: grid; grid-template-columns: 160px 1fr; gap: 16px; align-items: start; }
     }
 
-    /* Project spacing and styling */
+    
     #projects { margin-top: 30px; }
     #projects h2 { margin-bottom: 6px; }
     .project { margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #ddd; }
@@ -28,6 +152,8 @@
     .project p { margin-bottom: 10px; }
     .project img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; }
     .project a { display: inline-block; margin-top: 5px; color: #2563eb; text-decoration: none; }
+    
+    
     .project a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -38,8 +164,8 @@
     
       <h1>Aaron Benhase</h1>
       <p class="contact">
-        Email: <a href="mailto:yourname@knights.ucf.edu">aa257544@ucf.edu</a><br>
-        LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank">https://www.linkedin.com/in/aaron-benhase-91591022b</a>
+        Email: <a href="aa257544@ucf.edu">aa257544@ucf.edu</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/aaron-benhase-91591022b" target="_blank">https://www.linkedin.com</a>
       </p>
     </header>
 
@@ -95,7 +221,7 @@ Database Concepts, OS Engineering, Computer Security</li>
     </section>
     
        <section id="experience2">
-      <h3>pooblix, UCF Lab</h3>
+      <h3>Cashier, Publix Supermarkets</h3>
       <p>Jan 2024 to Present, Orlando, FL</p>
       <ul>
         <li>Operated cash register and handled customer transactions accurately</li>
@@ -113,7 +239,13 @@ Database Concepts, OS Engineering, Computer Security</li>
         <img src="images/mantis.jpg" alt="Desk setup during M.A.N.T.I.S lab work">
         <p>I built a portable Linux cyber-lab on a System76 Meerkat, nicknamed <b>M.A.N.T.I.S (Mobile Analysis and Network Traffic Intelligence System)</b>. Focus on Android traffic using Malcolm for logs and Burp Suite for MITM testing. Reviewed X.509 chains and used JA4 for fingerprinting.</p>
         <p><strong>Skills learned:</strong> Threat analysis, Malcolm stack, JA4, TLS</p>
-        <a href="Project1.html">View Project 1</a>
+        <!-- From Uiverse.io by cssbuttons-io --> 
+
+<a href="project1.html" class="btn">
+  <span>View Project</span>
+</a>
+
+
       </div>
 
       <div class="project">
@@ -121,12 +253,13 @@ Database Concepts, OS Engineering, Computer Security</li>
         <img src="images/aws-bucket.jpg" alt="Diagram of S3 mount to EC2 with GuardDuty">
         <p>Mounted an S3 bucket to a Linux EC2 instance with s3fs for easy uploads and file access. Enabled GuardDuty malware protection to watch the bucket for threats.</p>
         <p><strong>Skills learned:</strong> Linux, AWS S3, s3fs, GuardDuty</p>
-        <a href="Project2.html">View Project 2</a>
+        <a href="project1.html" class="btn">
+  <span>View Project</span>
+</a>
       </div>
 
       <div class="project">
         <h3>ADS-B Flight Receiver</h3>
-        <img src="images/adsb.jpg" alt="Raspberry Pi ADS-B receiver setup">
         <p>Configured a Raspberry Pi with PiAware to track flights using ADS-B. Used 1090 MHz and 978 MHz receivers to collect and store data for real-time tracking.</p>
         <p><strong>Skills learned:</strong> Raspberry Pi, Linux, Radio basics, Data logging</p>
       </div>
@@ -148,4 +281,3 @@ Database Concepts, OS Engineering, Computer Security</li>
 
 </body>
 </html>
-
