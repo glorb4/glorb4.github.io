@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>AWS Bucket Mount / GuardDuty</h3>
-          <img src="Example1.png" alt="Final Setup" class="project-image" />
-          <p> Mounted an S3 bucket to a Linux EC2 instance with s3fs for easy uploads and file access. Enabled GuardDuty malware protection to watch the bucket for threats. </p>
-          <p>
-            <strong>Skills learned:</strong> Linux, AWS S3, s3fs, GuardDut
-          </p>
+<head>
+  <meta charset="utf-8" />
+  <title>Project 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="container">
+    <h1>Project Details</h1>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>AWS Bucket Mount / GuardDuty</h3>
+
+        <figure>
+          <img src="Example1.png" alt="Final setup of S3 bucket mounted on EC2" class="project-image" />
+          <figcaption>EC2 instance with S3 bucket mounted and GuardDuty monitoring</figcaption>
+        </figure>
+
+        <p>
+          Mounted an S3 bucket to a Linux EC2 instance with <code>s3fs</code> for easy uploads and file access.
+          Enabled GuardDuty malware protection to watch the bucket for threats.
+        </p>
+
+        <p><strong>Skills learned:</strong> Linux, AWS S3, s3fs, GuardDuty</p>
+
+        <nav>
           <a href="index.html" class="btn">
             <span>Home</span>
           </a>
-        </div>
-      </section>
-    </div>
-  </body>
+        </nav>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy; Aaron Benhase</p>
+  </footer>
+
+</body>
 </html>
