@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Project 2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  margin: 0;
-}
-
-.project {
-  max-width: 600px;        /* keeps it from being too wide */
-  margin: 40px auto;       /* centers it horizontally */
-  text-align: center;      /* centers the text and button */
-  background: #fff;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.project img {
-  max-width: 100%;   /* scales image nicely */
-  height: auto;
-  margin-bottom: 15px;
-}
-</style>
+  <meta charset="utf-8" />
+  <title>Project 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <div class="container">
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <body>
-  
-<div class="project">
+      <div class="project">
         <h3>AWS Bucket Mount / GuardDuty</h3>
-        <img src="images/aws-bucket.jpg" alt="Diagram of S3 mount to EC2 with GuardDuty">
-        <p>Mounted an S3 bucket to a Linux EC2 instance with s3fs for easy uploads and file access. Enabled GuardDuty malware protection to watch the bucket for threats.</p>
-        <p><strong>Skills learned:</strong> Linux, AWS S3, s3fs, GuardDuty</p>
 
-      <a href="index.html" class="btn">
-      <span>Home</span>
-      </a>
-  
-</div>
-  </body>
+        <img src="IMG_5095.jpg" alt="Final Setup" class="project-image" />
+
+        <p>
+      Mounted an S3 bucket to a Linux EC2 instance with s3fs for easy uploads and file access. Enabled GuardDuty malware protection to watch the bucket for threats.
+        </p>
+
+        <p><strong>Skills learned:</strong> Linux, AWS S3, s3fs, GuardDut</p>
+
+        <a href="index.html" class="btn">
+          <span>Home</span>
+        </a>
+      </div>
+
+    </section>
+  </div>
+</body>
 </html>
