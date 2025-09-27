@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Project 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>M.A.N.T.I.S</h3>
+<head>
+  <meta charset="utf-8" />
+  <title>Project 1 - M.A.N.T.I.S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="container">
+    <h1>Project Details</h1>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>M.A.N.T.I.S</h3>
+
+        <figure>
           <img src="IMG_5095.jpg" alt="Desk setup during M.A.N.T.I.S lab work" class="project-image" />
-          <p> I built a portable Linux cyber lab on a System76 Meerkat, nicknamed <strong>M.A.N.T.I.S (Mobile Analysis and Network Traffic Intelligence System)</strong>. I focused on Android traffic using Malcolm for logging and Burp Suite for MITM testing. I also reviewed X.509 chains and used JA4 for fingerprinting. </p>
-          <p>I used Malcolm integrated with Zeek and Suricata to parse protocols and generate alerts, while Arkime indexed PCAPs for search and replay. Burp Suite handled HTTPS interception, allowing me to inspect requests and responses from Android devices. I reviewed X.509 certificate chains to check validity, issuers, and algorithms, and applied JA4 fingerprinting to profile TLS handshakes and spot unique client behaviors. Together, these tools gave me experience in log ingestion, TLS analysis, and traffic fingerprinting workflows that support threat hunting and app security testing. </p>
-          <p>
-            <strong>Skills learned:</strong> Threat analysis, Malcolm stack, JA4, TLS
-          </p>
-          <a href="index.html" class="btn">
-            <span>Home</span>
-          </a>
-        </div>
-      </section>
-    </div>
-  </body>
+          <figcaption>System76 Meerkat running the M.A.N.T.I.S cyber lab</figcaption>
+        </figure>
+
+        <p>
+          I built a portable Linux cyber lab on a System76 Meerkat, nicknamed
+          <strong>M.A.N.T.I.S (Mobile Analysis and Network Traffic Intelligence System)</strong>.
+          I focused on Android traffic using Malcolm for logging and Burp Suite for MITM testing.
+          I also reviewed X.509 chains and used JA4 for fingerprinting.
+        </p>
+
+        <p>
+          I used Malcolm integrated with Zeek and Suricata to parse protocols and generate alerts,
+          while Arkime indexed PCAPs for search and replay. Burp Suite handled HTTPS interception,
+          allowing me to inspect requests and responses from Android devices. I reviewed X.509
+          certificate chains to check validity, issuers, and algorithms, and applied JA4
+          fingerprinting to profile TLS handshakes and spot unique client behaviors. Together,
+          these tools gave me experience in log ingestion, TLS analysis, and traffic fingerprinting
+          workflows that support threat hunting and app security testing.
+        </p>
+
+        <p><strong>Skills learned:</strong> Threat analysis, Malcolm stack, JA4, TLS</p>
+
+        <nav>
+          <a href="index.html" class="btn"><span>Home</span></a>
+        </nav>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy; Aaron Benhase</p>
+  </footer>
+
+</body>
 </html>
